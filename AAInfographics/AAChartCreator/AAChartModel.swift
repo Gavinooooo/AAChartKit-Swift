@@ -90,6 +90,7 @@ public enum AAChartType: String {
     case polygon         //A polygon series can be used to draw any freeform shape in the cartesian coordinate system. A fill is applied with the color option, and stroke is applied through lineWidth and lineColor options.
     case gauge           //Gauges are circular plots displaying one or more values with a dial pointing to values along the perimeter.
     case errorbar        //Error bars are a graphical representation of the variability of data and are used on graphs to indicate the error, or uncertainty in a reported measurement.
+    case xrange
 }
 
 //https://api.highcharts.com/highcharts/legend.layout
