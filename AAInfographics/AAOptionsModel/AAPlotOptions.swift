@@ -46,6 +46,7 @@ public class AAPlotOptions: AAObject {
     public var arearange: AAArearange?
     public var boxplot: AABoxplot?
     public var scatter: AAScatter?
+    public var xrange: AAColumnrange?
 
     @discardableResult
     public func series(_ prop: AASeries) -> AAPlotOptions {
@@ -124,7 +125,12 @@ public class AAPlotOptions: AAObject {
         scatter = prop
         return self
     }
-    
+
+    @discardableResult
+    public func xrange(_ prop: AAColumnrange) -> AAPlotOptions {
+        xrange = prop
+        return self
+    }
     public override init() {
         
     }
